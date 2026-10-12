@@ -1,0 +1,46 @@
+/* css styles */
+.quarto-container{
+    padding: 20px !important;
+    display: block !important;
+}
+
+.navbar {
+    background-color: #135D50 !important;
+}
+
+.quarto-title-banner {
+  min-height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Keep all footer logos on one line */
+.nav-footer-center p {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Allow logos to shrink to fit */
+.nav-footer-center p img {
+  display: block;  
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Restrict the document body from expanding past its natural content height */
+html, body {
+  height: auto !important;
+  min-height: 100% !important;
+}
+
+/* Prevent the sidebar backdrop layer from stretching the page height */
+#quarto-sidebar-glass {
+  height: 0px !important;
+  display: none !important;
+}
+
