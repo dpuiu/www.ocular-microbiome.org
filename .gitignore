@@ -223,3 +223,8 @@ __marimo__/
 **/*.quarto_ipynb
 
 node_modules/*
+
+**/*0
+**/*1
+_site/
+*swp

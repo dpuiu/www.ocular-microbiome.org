@@ -1,35 +1,15 @@
 ---
-title: "Individuals"
+title: "Vanderbilt University Medical Center Individuals"
 ---
 
 ```{python}
 #| echo: false
 #| warning: false
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parent.parent))
+from scripts.individuals import show_individuals
 
-import pandas as pd
-from itables import show
-from IPython.display import HTML, display
-
-df = pd.read_csv("Individuals.csv")
-display(HTML('<div data-pagefind-body style="display:none">' + df.to_html(index=False, escape=True)    + '</div>'))
-
-df.insert(0, "#", range(1, len(df) + 1))
-#hidden = []
-
-show(
-    df,
-    #columnDefs=[{"targets": hidden, "visible": False},],
-    paging=True,
-    pageLength=10,
-    scrollX=True,
-    classes="display compact",
-    layout={
-        "topStart": ["buttons"],
-        "topEnd": ["search"],
-        "bottomStart": ["pageLength"],
-        "bottomEnd": ["paging"] ,
-    },
-    buttons=["colvis"],
-    allow_html=True,    
-)
+show_individuals()
 ```
+

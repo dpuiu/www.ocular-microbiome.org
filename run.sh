@@ -27,3 +27,9 @@ python3 -m pip install jupyter pandas itables
 python3 -m pip freeze > requirements.txt
 
 quarto render
+
+###
+
+python -c "import pandas as pd; df=pd.read_csv('Samples.csv'); print(df.nunique().to_string())" | sort -k2,2nr
+
+http://localhost:3602/Consortium_Data/VUMC_Data/Individuals.html#V24_24 # err

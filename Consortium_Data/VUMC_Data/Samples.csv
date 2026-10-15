@@ -1,4 +1,4 @@
-omc_id,sample_id,non_human_reads,individual_id,visit_number,biosample_side,collection_time
+omc_id,sample_name,non_human_reads,individual_id,visit_number,biosample_side,collection_time
 vumc00001,12680-PG-001,4226,V24_1,V1,R,
 vumc00002,12680-PG-002,6938,V24_2,V1,R,
 vumc00003,12680-PG-003,27128,V24_3,V1,R,

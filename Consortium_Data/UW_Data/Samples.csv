@@ -1,4 +1,4 @@
-omc_id,sample_id,non_human_reads
+omc_id,sample_name,non_human_reads
 uw00001,s003183fd309e,102642
 uw00002,s00cb9e0571c8,133962
 uw00003,s01044d01ba04,305533

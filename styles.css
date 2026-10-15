@@ -1,46 +1,92 @@
 /* css styles */
-.quarto-container{
-    padding: 20px !important;
-    display: block !important;
-}
-
 .navbar {
     background-color: #135D50 !important;
 }
 
+/* header */
 .quarto-title-banner {
   min-height: 240px;
   background-size: cover;
   background-position: center;
 }
 
-/* Keep all footer logos on one line */
-.nav-footer-center p {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-
-/* Allow logos to shrink to fit */
-.nav-footer-center p img {
-  display: block;  
-  min-width: 0;
-  max-width: 100%;
-  height: auto;
-}
-
-
-/* Restrict the document body from expanding past its natural content height */
+/*
 html, body {
   height: auto !important;
   min-height: 100% !important;
 }
 
-/* Prevent the sidebar backdrop layer from stretching the page height */
 #quarto-sidebar-glass {
   height: 0px !important;
   display: none !important;
+}*/
+
+/* keeps wide 100% */
+.quarto-container {
+  padding: 20px !important;
+  display: block !important;
 }
 
+/* Keep the footer close to the page content *
+#quarto-content {
+  min-height: 0;
+}*/
+
+/* Footer layout */
+.nav-footer {
+  width: 100%;
+  padding: 15px 10px;
+}
+
+.nav-footer-center {
+  flex: 1 1 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Keep all logos in one horizontal row */
+.nav-footer-center .footer-logos {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+/* Prevent individual logos from stacking */
+.nav-footer-center .footer-logos img {
+  display: block !important;
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  max-width: 100px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 !important;
+}
+
+/* Remove paragraph margins if Quarto inserts paragraphs */
+.nav-footer-center .footer-logos p {
+  display: contents;
+}
+
+.highlight {
+    background-color: yellow;  
+    color: black;              
+}
+
+table.dataTable tbody td mark {
+    background-color: yellow;
+    color: black;
+}
+
+/* Highlight search matches in yellow */
+.pagefind-ui mark,
+.pagefind mark,
+mark[data-pagefind-match] {
+    background-color: yellow !important;
+    color: black !important;
+}

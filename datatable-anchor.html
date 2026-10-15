@@ -1,0 +1,72 @@
+<script type="module">
+import("pagefind-highlight.js").then(() => {
+    new PagefindHighlight({
+        highlightParam: "highlight"
+    });
+});
+</script>
+
+<script>
+$(document).ready(function () {
+    function navigateToAnchor() {
+        const id = decodeURIComponent(
+            window.location.hash.substring(1)
+        );
+
+        if (!id || !$.fn.dataTable) return;
+
+        // Find the initialized DataTables table.
+        const element = document.querySelector(".dataTable");
+
+        if (!element || !$.fn.dataTable.isDataTable(element)) {
+            return;
+        }
+
+        const table = $(element).DataTable();
+
+        // Find the row containing the requested ID.
+        const rows = table.rows({ search: "none" }).nodes().toArray();
+
+        const row = rows.find(function (node) {
+            return Array.from(node.querySelectorAll("[id]"))
+                .some(function (el) {
+                    return el.id === id;
+                });
+        });
+
+        if (!row) {
+            console.warn("Could not find DataTables row for:", id);
+            return;
+        }
+
+        // Find its position in the current sorted table.
+        const indexes = table.rows({ order: "applied", search: "none" })
+            .nodes()
+            .toArray();
+
+        const index = indexes.indexOf(row);
+
+        if (index < 0) return;
+
+        // Navigate to the page containing the row.
+        const pageLength = table.page.len();
+
+        table.page(Math.floor(index / pageLength)).draw("page");
+
+        // Scroll after DataTables renders the page.
+        setTimeout(function () {
+            const target = document.getElementById(id);
+
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            }
+        }, 150);
+    }
+
+    // Wait for Quarto and itables to initialize.
+    setTimeout(navigateToAnchor, 500);
+});
+</script>

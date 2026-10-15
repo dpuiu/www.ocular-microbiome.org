@@ -1,39 +1,14 @@
 ---
-title: "Samples"
+title: "Johns Hopkins University Samples"
 ---
 
 ```{python}
 #| echo: false
 #| warning: false
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parent.parent))
+from scripts.samples import show_samples
 
-import pandas as pd
-from itables import show
-from IPython.display import HTML, display
-
-df = pd.read_csv("Samples.csv")
-display(HTML('<div data-pagefind-body style="display:none">' + df.to_html(index=False, escape=True)    + '</div>'))
-
-df.insert(0, "#", range(1, len(df) + 1))
-numeric = [3, 4, 5]
-hidden = [5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 30]
-df['non_human_reads'] = "<a href=https://data.idies.jhu.edu/OcularMicrobiome/Consortium_data/JHU/" + df["sample_name"].astype(str) + ".unmapped.fasta.gz>" + df["non_human_reads"].astype(str)  + "</a>"
-
-show(
-    df,
-    columnDefs=[
-        {"targets": hidden, "visible": False},        
-        ],
-    paging=True,
-    pageLength=10,
-    scrollX=True,
-    classes="display compact",
-    layout={
-        "topStart": ["buttons"],
-        "topEnd": ["search"],
-        "bottomStart": ["pageLength"],
-        "bottomEnd": ["paging"] ,
-    },
-    buttons=["colvis"],
-    allow_html=True,    
-)
+show_samples("JHU", "fasta")
 ```

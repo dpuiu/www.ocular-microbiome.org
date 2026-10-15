@@ -3,13 +3,18 @@ project:
   #output-dir: _site
   #site-url: https://www.ocular-microbiome.org
 
+execute:
+  kernel: base
+
 format:
   html:
     css: styles.css
+    include-after-body: datatable-anchor.html
 
 website:
-  title: "OMC"
+  title: "Ocular Microbiome Consortium (OMC)"
   description: "Ocular Microbiome Consortium"
+  search: true
 
   navbar:
     left:
@@ -21,7 +26,7 @@ website:
         text: Publications
       - text: Samples
         menu:
-          - href: Consortium_Data/BCM_Data/Samples.Illumina_WGS.qmd
+          - href: Consortium_Data/BCM_Data/Samples.qmd
             text: Baylor College of Medicine
           - href: Consortium_Data/UW_Data/Samples.qmd
             text: University of Washington
@@ -29,6 +34,14 @@ website:
             text: Vanderbilt University Medical Center
           - href: Consortium_Data/JHU_Data/Samples.qmd
             text: Johns Hopkins University
+          - href: Consortium_Data/JHU_Data/Samples.Air.qmd
+            text: Johns Hopkins University (Air)
+          - href: Consortium_Data/JHU_Data/Samples.Conj.qmd
+            text: Johns Hopkins University (Conjunctiva)
+          - href: Consortium_Data/JHU_Data/Samples.Lid.qmd
+            text: Johns Hopkins University (Lid Margin)
+          - href: Consortium_Data/JHU_Data/Samples.Skin.qmd
+            text: Johns Hopkins University (Periocular Skin)
           - href: Consortium_Data/PITT_Data/Samples.qmd
             text: University of Pittsburgh
       - text: Individuals
@@ -44,17 +57,14 @@ website:
     left: ""
     center: |
       <div class="footer-logos">
-      <img src="/images/footer_01_nih-logo.jpg" width="80" alt="&quot;NIH National Eye Institute&quot;"/>
-      <img src="/images/footer_02_BCM_CMMR_Logo_Horz_Gray.png" width="100" alt="&quot;Baylor College of Medicine&quot;" />
-      <img src="/images/footer_02_BCM_OSC.png" width="80" alt="&quot;Baylor College of Medicine&quot;" />
-      <img src="/images/UTHH-Stacked-OrangeGray-RGB.png" width="80" alt="&quot;UTHealth Houston&quot;" />
-      <img src="/images/UW_logo.jpg" width="80" alt="&quot;University of Washington&quot;" />
-      <img src="/images/VUMC_logo_300px.jpg" width="80" alt="&quot;Vanderbilt University Medical Center&quot;" />
-      <img src="/images/V-JHM-2.png" width="80" alt="&quot;JHU Medicine&quot;" />
-      <img src="/images/Wilmer-logo-W-300px.jpg" width="50" alt="&quot;JHU Wilmer Institute&quot;" />
-      <img src="/images/Pitt_logo.png" width="80" alt="&quot;University of Pittsburgh&quot;" />
+        <img src="/images/footer_01_nih-logo.jpg" alt="NIH National Eye Institute">
+        <img src="/images/footer_02_BCM_CMMR_Logo_Horz_Gray.png" alt="Baylor College of Medicine">
+        <img src="/images/footer_02_BCM_OSC.png" alt="Baylor College of Medicine">
+        <img src="/images/UTHH-Stacked-OrangeGray-RGB.png" alt="UTHealth Houston">
+        <img src="/images/UW_logo.jpg" alt="University of Washington">
+        <img src="/images/VUMC_logo_300px.jpg" alt="Vanderbilt University Medical Center">
+        <img src="/images/V-JHM-2.png" alt="Johns Hopkins Medicine">
+        <img src="/images/Wilmer-logo-W-300px.jpg" alt="Wilmer Eye Institute">
+        <img src="/images/Pitt_logo.png" alt="University of Pittsburgh">
       </div>
     right: ""
-
-execute:
-  kernel: base
