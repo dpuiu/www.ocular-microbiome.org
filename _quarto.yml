@@ -8,6 +8,9 @@ execute:
 
 format:
   html:
+    theme: 
+      - united
+      - custom.scss
     css: styles.css
     include-after-body: datatable-anchor.html
 
@@ -66,5 +69,5 @@ website:
         <a href="https://www.jhu.edu"><img src="/images/V-JHM-2.png" alt="Johns Hopkins Medicine" width="80"></a>
         <a href="https://www.hopkinsmedicine.org/wilmer"><img src="/images/Wilmer-logo-W-300px.jpg"  alt="Wilmer Eye Institute" width="50"></a>
         <a href="https://www.pitt.edu"><img src="/images/Pitt_logo.png" alt="University of Pittsburgh" width="80"></a>
-     </div>
+      </div>
     right: ""
