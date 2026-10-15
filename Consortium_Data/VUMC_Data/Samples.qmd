@@ -5,12 +5,18 @@ title: "Samples"
 ```{python}
 #| echo: false
 #| warning: false
-
 import sys
 from pathlib import Path
 
-#sys.path.insert(0, str(Path.cwd()))
-sys.path.insert(0, str(Path.cwd().parent))
+# Locate the Quarto project root
+PROJECT_DIR = Path.cwd().resolve()
+
+while not (PROJECT_DIR / "_quarto.yml").exists():
+    if PROJECT_DIR == PROJECT_DIR.parent:
+        raise RuntimeError("Cannot find the Quarto project root")
+    PROJECT_DIR = PROJECT_DIR.parent
+
+sys.path.insert(0, str(PROJECT_DIR))
 
 from scripts.samples import show_samples
 

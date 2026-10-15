@@ -5,7 +5,7 @@ project:
 
 format:
   html:
-    css: styles.css    
+    css: styles.css
 
 website:
   title: "OMC"
@@ -55,3 +55,6 @@ website:
       <img src="/images/Pitt_logo.png" width="80" alt="&quot;University of Pittsburgh&quot;" />
       </div>
     right: ""
+
+execute:
+  kernel: base

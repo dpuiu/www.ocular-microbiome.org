@@ -17,4 +17,13 @@ convert header_01_header-bg.jpg     -format %c histogram:info:- |     sort -nr |
           2453: (20,94,81) #145E51 srgb(20,94,81)
           2036: (18,94,81) #125E51 srgb(18,94,81)
          ...
-        
+####        
+
+# 2026-10-15
+
+/usr/bin/python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install jupyter pandas itables
+python3 -m pip freeze > requirements.txt
+
+quarto render
