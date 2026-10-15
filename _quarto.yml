@@ -57,14 +57,14 @@ website:
     left: ""
     center: |
       <div class="footer-logos">
-        <img src="/images/footer_01_nih-logo.jpg" alt="NIH National Eye Institute">
-        <img src="/images/footer_02_BCM_CMMR_Logo_Horz_Gray.png" alt="Baylor College of Medicine">
-        <img src="/images/footer_02_BCM_OSC.png" alt="Baylor College of Medicine">
-        <img src="/images/UTHH-Stacked-OrangeGray-RGB.png" alt="UTHealth Houston">
-        <img src="/images/UW_logo.jpg" alt="University of Washington">
-        <img src="/images/VUMC_logo_300px.jpg" alt="Vanderbilt University Medical Center">
-        <img src="/images/V-JHM-2.png" alt="Johns Hopkins Medicine">
-        <img src="/images/Wilmer-logo-W-300px.jpg" alt="Wilmer Eye Institute">
-        <img src="/images/Pitt_logo.png" alt="University of Pittsburgh">
-      </div>
+        <a href="https://www.nei.nih.gov/"><img src="/images/footer_01_nih-logo.jpg" alt="NIH National Eye Institute" width="80"></a>
+        <a href="https://www.bcm.edu"><img src="/images/footer_02_BCM_CMMR_Logo_Horz_Gray.png" alt="Baylor College of Medicine" width="100"></a>
+        <a href="https://www.bcm.edu"><img src="/images/footer_02_BCM_OSC.png" alt="Baylor College of Medicine" width="80"></a>
+        <a href="https://www.uth.edu/"><img src="/images/UTHH-Stacked-OrangeGray-RGB.png" alt="UTHealth Houston" width="80"></a>
+        <a href="https://www.washington.edu/"><img src="/images/UW_logo.jpg" alt="University of Washington" width="80"></a>
+        <a href="https://www.vumc.org/"><img src="/images/VUMC_logo_300px.jpg" alt="Vanderbilt University Medical Center" width="80"></a>
+        <a href="https://www.jhu.edu"><img src="/images/V-JHM-2.png" alt="Johns Hopkins Medicine" width="80"></a>
+        <a href="https://www.hopkinsmedicine.org/wilmer"><img src="/images/Wilmer-logo-W-300px.jpg"  alt="Wilmer Eye Institute" width="50"></a>
+        <a href="https://www.pitt.edu"><img src="/images/Pitt_logo.png" alt="University of Pittsburgh" width="80"></a>
+     </div>
     right: ""

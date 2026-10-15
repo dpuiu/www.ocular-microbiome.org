@@ -5,8 +5,6 @@ from IPython.display import HTML, display
 def show_samples(center, format="fastq", biosample_type=None, biosample_site=None):
     df = pd.read_csv("Samples.csv")
 
-    print(len(df))
-
     # Filter
     if biosample_type is not None:
         df = df[df["biosample_type"].isin(biosample_type)].reset_index(drop=True)
@@ -20,8 +18,6 @@ def show_samples(center, format="fastq", biosample_type=None, biosample_site=Non
         + df.to_html(index=False, escape=True)
         + '</div>'
     ))
-
-    print(len(df))
 
     # Add row numbers
     df.insert(0, "#", range(1, len(df) + 1))
