@@ -10,5 +10,5 @@ from pathlib import Path
 sys.path.insert(0, str(Path.cwd().parent.parent))
 from scripts.individuals import show_individuals
 
-show_individuals()
+show_individuals("JHU")
 ```

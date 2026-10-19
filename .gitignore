@@ -228,3 +228,8 @@ node_modules/*
 **/*1
 _site/
 *swp
+_extensions/	
+_freeze/
+**html	
+_extensions/	
+site_libs/

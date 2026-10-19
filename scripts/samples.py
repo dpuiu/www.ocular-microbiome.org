@@ -2,15 +2,18 @@ import pandas as pd
 from itables import show
 from IPython.display import HTML, display
 
+from functools import cache
+
+@cache
 def show_samples(center, format="fastq", biosample_type=None, biosample_site=None):
     df = pd.read_csv("Samples.csv")
 
     # Filter
     if biosample_type is not None:
-        df = df[df["biosample_type"].isin(biosample_type)].reset_index(drop=True)
+        df = df[df["biosample_type"]==biosample_type].reset_index(drop=True)
 
     if biosample_site is not None:
-        df = df[df["biosample_site"].isin(biosample_site)].reset_index(drop=True)
+        df = df[df["biosample_site"]==biosample_site].reset_index(drop=True)
 
     # Make the complete table searchable by Pagefind
     display(HTML(

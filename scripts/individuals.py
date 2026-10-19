@@ -3,7 +3,10 @@ from itables import show
 from IPython.display import HTML, display
 from html import escape
 
-def show_individuals():
+from functools import cache
+
+@cache
+def show_individuals(center):
     df = pd.read_csv("Individuals.csv")
 
     # Make the complete table searchable by Pagefind
@@ -26,8 +29,9 @@ def show_individuals():
 
     show(
     df,
-    paging=True,
-    pageLength=10,
+    #paging=True,
+    #pageLength=10,
+    paging=False,
     scrollX=True,
     classes="display compact",
     layout={

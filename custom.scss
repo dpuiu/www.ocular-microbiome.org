@@ -1,4 +1,99 @@
 /*-- scss:defaults --*/
 
+// Theme colors
 $primary: #135D50;
-$link-color: #135D50;
+$link-color: $primary;
+
+/*-- scss:rules --*/
+
+/*----------------------------------------*/
+/* Header */
+
+.quarto-title-banner {
+  min-height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*----------------------------------------*/
+/* Page layout */
+
+.quarto-container {
+  display: block !important;
+  padding: 20px !important;
+}
+
+/*----------------------------------------*/
+/* Navbar dropdown menu */
+
+.navbar .dropdown-menu {
+  background-color: white;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: $primary !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+  color: white !important;
+  background-color: $primary;
+}
+
+/*----------------------------------------*/
+/* White footer */
+
+.nav-footer,
+.nav-footer-left,
+.nav-footer-center,
+.nav-footer-right {
+  background-color: white !important;
+}
+
+.nav-footer {
+  width: 100%;
+  padding: 15px 10px;
+}
+
+.nav-footer-center {
+  flex: 1 1 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/*----------------------------------------*/
+/* Footer logos in one row */
+
+.footer-logos {
+  display: flex !important;
+  flex-flow: row nowrap !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+
+  img {
+    flex: 0 1 auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 60px;
+    object-fit: contain;
+    margin: 0 !important;
+  }
+
+  p {
+    display: contents;
+  }
+}
+
+/*----------------------------------------*/
+/* Search highlighting */
+
+.highlight,
+table.dataTable tbody td mark,
+.pagefind-ui mark,
+.pagefind mark,
+mark[data-pagefind-match] {
+  background-color: yellow;
+  color: black;
+}

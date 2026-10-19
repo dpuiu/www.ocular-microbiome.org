@@ -1,23 +1,23 @@
 project:
   type: website
-  #output-dir: _site
-  #site-url: https://www.ocular-microbiome.org
+  output-dir: _site
 
 execute:
   kernel: base
+  freeze: auto
+  #freeze: false
 
 format:
   html:
-    theme: 
-      - united
-      - custom.scss
-    css: styles.css
-    include-after-body: datatable-anchor.html
+    theme:
+      light: [lumen, custom.scss]
+    include-after-body: datatable-anchor.html # for highlights; not quite working
 
 website:
   title: "Ocular Microbiome Consortium (OMC)"
   description: "Ocular Microbiome Consortium"
   search: true
+  site-url: https://dpuiu.github.io/www.ocular-microbiome.org/
 
   navbar:
     left:
@@ -55,6 +55,11 @@ website:
             text: Johns Hopkins University
           - href: Consortium_Data/PITT_Data/Individuals.qmd
             text: University of Pittsburgh
+
+    right:
+      - icon: github
+        href: https://github.com/dpuiu/www.ocular-microbiome.org
+        aria-label: GitHub
 
   page-footer:
     left: ""

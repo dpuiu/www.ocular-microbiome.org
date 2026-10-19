@@ -10,5 +10,5 @@ from pathlib import Path
 sys.path.insert(0, str(Path.cwd().parent.parent))
 from scripts.samples import show_samples
 
-show_samples("JHU", "fasta", biosample_type=["Air Control"])
+show_samples("JHU", "fasta", biosample_type="Air Control")
 ```
