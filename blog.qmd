@@ -1,0 +1,19 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  feed: true
+  fields: [title, date, description, image, categories]
+#  filter-ui: true
+#  grid-columns: 3
+#  image-align: center
+#  image-height: 150px
+#  max-items: 10
+#  page-size: 6
+#  sort-ui: true
+#  template: listing-custom.ejs
+#  type: grid
+---

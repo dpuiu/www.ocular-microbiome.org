@@ -1,0 +1,12 @@
+---
+title: "Welcome to Our Blog"
+date: "2026-10-05"
+author: "Daniela Puiu"
+description: "Symposioum"
+categories: [ OMC ]
+---
+
+## OMC
+
+Resident Ocular Microbiome Consortium Scientific Symposium, scheduled on Saturday, November 14, 2026
+

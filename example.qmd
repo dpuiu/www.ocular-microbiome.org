@@ -1,0 +1,125 @@
+
+---
+title: "Example"
+#page-layout: full
+#abstract: "Study summary"
+#anchor-sections: true
+#author: "Jane Smith"
+#bibliography: references.bib
+#citation: true
+#csl: styles/apa.csl
+#date: "2026-10-22"
+#date-modified: "2026-10-22"
+#description: "Research consortium"
+#image: "images/banner.jpg"?
+#keywords: [microbiome, genomics]
+#lang: en
+#license: "CC BY 4.0"?
+#link-citations: true
+#number-depth: 2
+##number-sections: false
+##smooth-scroll: true
+#subtitle: "Our Research"
+#title-block-banner: true
+title-block-banner: "images/eyeFacts-146599805-770x533-1-jpg.webp"
+#title-block-banner-color: "#135D50"
+#title-block-categories: true
+#title-block-style: default
+##toc: true
+##toc-depth: 3
+##toc-location: right
+---
+
+## About Our Consortium
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+The Ocular Microbiome Consortium brings together researchers, clinicians, and data scientists to investigate microbial communities on the eye.
+
+We promote collaboration, reproducible research, and open data.
+
+[About Us →](Consortium_members.qmd)
+
+:::
+
+::: {.column width="50%"}
+
+![Laboratory research](images/laboratory.jpg)
+
+:::
+
+:::
+
+## What We Do
+
+::: {.columns}
+
+::: {.column width="25%"}
+
+### Research
+
+Investigate the ocular microbiome using sequencing and computational methods.
+
+[Learn more →](research.qmd)
+
+:::
+
+::: {.column width="25%"}
+
+### Collaborate
+
+Connect researchers across institutions and disciplines.
+
+[Meet our members →](members.qmd)
+
+:::
+
+::: {.column width="25%"}
+
+### Data
+
+Explore datasets and research resources.
+
+[Browse data →](data.qmd)
+
+:::
+
+::: {.column width="25%"}
+
+### Publications
+
+Discover our scientific publications.
+
+[View publications →](publications.qmd)
+
+:::
+
+:::
+
+## Latest News
+
+::: {.card}
+
+::: {.card-body}
+
+### New Research Updates
+
+Discover recent findings and consortium announcements.
+
+[Read the blog →](blog.qmd)
+
+:::
+
+:::
+
+## Recent Public Datasets
+
+| Dataset | Description | Samples |
+|---|---|---:|
+| OMC-DS-001 | Healthy participants | 150 |
+| OMC-DS-002 | Longitudinal cohort | 200 |
+| OMC-DS-003 | Cataract surgery cohort | 120 |
+
+[View all datasets →](data.qmd)

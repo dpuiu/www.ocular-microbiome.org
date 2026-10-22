@@ -1,0 +1,11 @@
+---
+title: "Welcome to Our Blog"
+date: "2026-10-22"
+author: "Daniela Puiu"
+description: "News, updates, and announcements."
+categories: [ OMC ]
+---
+
+## OMC
+
+{{< lipsum >}}

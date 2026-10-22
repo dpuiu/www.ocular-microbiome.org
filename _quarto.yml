@@ -2,24 +2,47 @@ project:
   type: website
   output-dir: _site
 
-execute:
-  kernel: base
-  freeze: auto
-  #freeze: false
-
 format:
   html:
     theme:
       light: [lumen, custom.scss]
+    mainfont: "Arial"
     include-after-body: datatable-anchor.html # for highlights; not quite working
+    anchor-sections: true
+#    citation-hover: true
+#    code-copy: true
+#    code-fold: true
+#    code-link: false
+#    code-line-numbers: true
+#    code-overflow: wrap
+#    code-summary: "Show code"
+#    code-tools: true
+#    crossrefs-hover: true
+#    css: styles.css
+#    default-image-extension: png
+#    embed-resources: true
+#    fig-cap-location: bottom
+#    footnotes-hover: true
+#    include-before-body: before-body.html
+#    include-in-header: header.html
+#    minimal: false
+#    number-sections: false
+    page-layout: full
+#    reference-location: margin
+    smooth-scroll: true
+#    tbl-cap-location: bottom
+    title-block-style: none
+#    toc: true
+#    toc-location: right
+#    toc-title: "Contents"
 
 website:
   title: "Ocular Microbiome Consortium (OMC)"
   description: "Ocular Microbiome Consortium"
   search: true
   site-url: https://dpuiu.github.io/www.ocular-microbiome.org/
-
   navbar:
+    title: false
     left:
       - href: index.qmd
         text: Home
@@ -55,12 +78,14 @@ website:
             text: Johns Hopkins University
           - href: Consortium_Data/PITT_Data/Individuals.qmd
             text: University of Pittsburgh
-
+      - href: blog.qmd
+        text: Blog
+      - href: example.qmd
+        text: Example
     right:
       - icon: github
         href: https://github.com/dpuiu/www.ocular-microbiome.org
         aria-label: GitHub
-
   page-footer:
     left: ""
     center: |
@@ -76,3 +101,49 @@ website:
         <a href="https://www.pitt.edu"><img src="/images/Pitt_logo.png" alt="University of Pittsburgh" width="80"></a>
       </div>
     right: ""
+#  favicon: images/favicon.png
+#  site-path: "/"
+#  image: images/banner.jpg
+#  sidebar:
+#    style: docked
+#    contents:
+#      - index.qmd
+#      - members.qmd
+#      - publications.qmd
+#  page-navigation: true
+#  back-to-top-navigation: true
+#  search: true
+#  bread-crumbs: true
+#  reader-mode: true
+#  announcement:
+#    content: "Welcome to the Ocular Microbiome Consortium website."
+#    position: below-navbar
+#    type: primary
+#    dismissable: true
+#  open-graph: true
+#  twitter-card: true
+#  comments:
+#    utterances:
+#      repo: dpuiu/www.ocular-microbiome.org
+#  drafts: []
+#  body-header: header.html
+#  body-footer: footer.html
+#  margin-header: margin-header.html
+#  margin-footer: margin-footer.html
+
+
+execute:
+  kernel: base
+  freeze: auto
+#  freeze: false
+#  echo: true
+#  warning: true
+#  message: true
+#  error: false
+#  cache: true
+#  eval: true
+#  include: true
+#  output: true
+#  fig-width: 8
+#  fig-height: 5
+#  daemon: false

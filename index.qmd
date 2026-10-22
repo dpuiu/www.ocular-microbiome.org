@@ -1,7 +1,19 @@
 ---
 title: "Ocular Microbiome Consortium"
-title-block-banner: "images/header_01_header-bg3.webp"
+#title-block-banner: "images/eyeFacts-146599805-770x533-1-jpg.webp"
+page-layout: full
 ---
+
+::: {.hero}
+
+## Advancing ocular microbiome research
+
+We bring together researchers to understand the ocular microbiome and its relationship to human health.
+
+[Sample Summary](Consortium_Data/Summary.qmd){.btn .btn-primary}
+[Bulk Download](https://data.idies.jhu.edu/OcularMicrobiome/Consortium_data){.btn .btn-primary}
+:::
+
 
 The **Ocular Microbiome Consortium (OMC)** was launched by the 
 [National Eye Institute](https://www.nei.nih.gov/) 

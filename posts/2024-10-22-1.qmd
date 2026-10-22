@@ -1,0 +1,14 @@
+---
+title: "Welcome to Our Blog"
+date: "2024-10-22"
+author: "Daniela Puiu"
+description: "OMC"
+categories: [ News ]
+---
+
+## Welcome
+
+Welcome to our blog!
+
+Here we will share news, project updates,
+research highlights, and announcements.

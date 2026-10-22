@@ -4,10 +4,43 @@
 $primary: #135D50;
 $link-color: $primary;
 
-/*-- scss:rules --*/
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+$font-family-sans-serif: "Lato", sans-serif;
+$headings-font-family: Georgia, serif;
 
 /*----------------------------------------*/
 /* Header */
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgb(0 45 50 / 85%),
+            rgb(0 45 50 / 30%)
+        ),
+        url("images/eyeFacts-146599805-770x533-1-jpg.webp") center / cover no-repeat;
+
+    color: white;
+}
+
+.hero h1 {
+    color: white;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    max-width: 750px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 1.2rem;
+}
 
 .quarto-title-banner {
   min-height: 240px;
@@ -97,3 +130,4 @@ mark[data-pagefind-match] {
   background-color: yellow;
   color: black;
 }
+
