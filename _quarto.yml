@@ -80,6 +80,8 @@ website:
             text: University of Pittsburgh
       - href: blog.qmd
         text: Blog
+      - href: contact.qmd
+        text: Contact
       - href: example.qmd
         text: Example
     right:
