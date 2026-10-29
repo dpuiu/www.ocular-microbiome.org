@@ -82,6 +82,8 @@ website:
         text: Blog
       - href: contact.qmd
         text: Contact
+      - href: calendar.qmd
+        text: Calendar
       - href: example.qmd
         text: Example
     right:
